@@ -1,0 +1,7 @@
+{
+  "items": [
+    { "name": "Oreo Dream Shake", "price": 6, "tag": "", "image": "", "description": "Crushed Oreo blended thick & creamy, finished with a whipped top." },
+    { "name": "Choco Bliss Shake", "price": 5, "tag": "", "image": "", "description": "Deep, velvety chocolate — pure blended bliss." },
+    { "name": "Vanilla Delight Shake", "price": 5, "tag": "", "image": "", "description": "Smooth classic vanilla, blended rich & frosty." }
+  ]
+}

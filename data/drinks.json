@@ -1,0 +1,6 @@
+{
+  "items": [
+    { "name": "Soft Drinks", "price": 1, "tag": "", "image": "", "description": "Ice-cold canned sodas." },
+    { "name": "Small Water", "price": 0.5, "tag": "", "image": "", "description": "Bottled still water." }
+  ]
+}

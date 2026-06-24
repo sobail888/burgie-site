@@ -1,0 +1,13 @@
+{
+  "items": [
+    { "name": "Starter Set", "price": 9, "tag": "", "image": "", "description": "Fries, 3 crispy strips, 3 onion rings, 3 cheesy bites & dipping sauce." },
+    { "name": "Dirty Fries", "price": 6, "tag": "Imported", "image": "", "description": "Loaded with bacon, onions, jalapeño pickles & chipotle mayo." },
+    { "name": "Truffle Fries", "price": 6, "tag": "Imported", "image": "", "description": "Truffle oil, parmesan & parsley." },
+    { "name": "Dirty Crispy", "price": 7, "tag": "", "image": "", "description": "Crispy chicken strips, fries, mayo & BBQ sauce." },
+    { "name": "Crispy Onion Rings", "price": 3, "tag": "", "image": "", "description": "5 pieces, golden & crunchy." },
+    { "name": "Cheesy Heat Bites", "price": 4, "tag": "", "image": "", "description": "5 pieces of melty, spicy cheese bites." },
+    { "name": "Small Fries", "price": 3, "tag": "Imported", "image": "", "description": "Imported fries, perfectly salted." },
+    { "name": "Large Fries", "price": 5, "tag": "Imported", "image": "", "description": "A big basket of imported fries." },
+    { "name": "Crispy Strips", "price": 5, "tag": "", "image": "", "description": "4 pieces of crispy chicken strips." }
+  ]
+}

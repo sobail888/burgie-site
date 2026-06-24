@@ -1,0 +1,22 @@
+{
+  "items": [
+    { "name": "Jack's Signature", "price": 10, "tag": "Signature", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles, halloumi, onion jam, roasted onions & truffle mayo." },
+    { "name": "Wagyu Blueberry Bacon Jam Burger", "price": 15, "tag": "180g Wagyu", "image": "", "description": "180g Wagyu beef, Burgie dressing, berry bacon jam, chipotle sauce, cheddar, red onion pickles & jalapeño pickles." },
+    { "name": "Protein Burger", "price": 13, "tag": "75g Protein", "image": "", "description": "Burgie dressing, grilled onions, cheddar cheese & 3 patties." },
+    { "name": "King Burger", "price": 9, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles, cheddar, onion jam, red onion pickles, smoked bacon & egg." },
+    { "name": "Chipotle Burger", "price": 8, "tag": "Masterpiece", "image": "", "description": "Chipotle mayo, onion jam, cheddar cheese & smoked bacon." },
+    { "name": "Smokey BBQ", "price": 8, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles, cheddar, smoked bacon, BBQ sauce & roasted onions." },
+    { "name": "Cheesy Bacon", "price": 8, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles, cheddar, onion, ketchup & smoked bacon." },
+    { "name": "Bacon Royal", "price": 7, "tag": "", "image": "", "description": "Ketchup, mayo, smoked bacon & cheddar cheese." },
+    { "name": "Ordinary Burger", "price": 6, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles & onion." },
+    { "name": "Cheese Burger", "price": 7, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles, ketchup, onion & cheddar cheese." },
+    { "name": "Oklahoma Burger", "price": 6, "tag": "", "image": "", "description": "Burgie dressing, dill pickles, smashed onions & mustard." },
+    { "name": "Fire Jalapeños", "price": 7, "tag": "Spicy", "image": "", "description": "Jalapeño dressing, iceberg, dill pickles, cheddar cheese & onion." },
+    { "name": "Swiss Mushroom", "price": 8, "tag": "", "image": "", "description": "Truffle mayo, onion jam, emmental cheese & grilled fresh mushrooms." },
+    { "name": "Tex Mex Burger", "price": 9, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, jalapeño pickles, onion jam, red onion pickles, mayo, guacamole & tortilla chips." },
+    { "name": "Crunchy Chicken", "price": 5, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles & cheddar cheese." },
+    { "name": "BBQ Chicken", "price": 6, "tag": "", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles, cheddar, bacon, BBQ sauce & chipotle mayo." },
+    { "name": "Halloumi Burger", "price": 6, "tag": "120g", "image": "", "description": "Burgie dressing, iceberg, tomato, dill pickles, chimichurri & onion jam." },
+    { "name": "Truffle Luxe Burger", "price": 8, "tag": "180g Wagyu", "image": "", "description": "180g Wagyu beef, Burgie dressing, onion jam, emmental cheese, roasted onions & truffle mayo." }
+  ]
+}

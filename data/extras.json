@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "name": "Double Your Patty", "price": 3, "tag": "Add-on", "image": "", "description": "Add an extra 120g Black Angus patty to any burger." },
+    { "name": "Make It Combo", "price": 4, "tag": "Add-on", "image": "", "description": "Turn any burger into a combo: imported fries, a soft drink & a sauce." },
+    { "name": "Spicy Kick", "price": 0.5, "tag": "Sauce", "image": "", "description": "Our fiery house dip." },
+    { "name": "Smokey Drizzle", "price": 0.5, "tag": "Sauce", "image": "", "description": "Smoky, rich & moreish." },
+    { "name": "Truffle Dip", "price": 0.5, "tag": "Sauce", "image": "", "description": "Earthy truffle indulgence." },
+    { "name": "Creamy Mayo", "price": 0.5, "tag": "Sauce", "image": "", "description": "Classic, smooth & creamy." },
+    { "name": "Chipotle Hit", "price": 0.5, "tag": "Sauce", "image": "", "description": "Smoky chipotle heat." },
+    { "name": "Burgie Dressing", "price": 0.5, "tag": "Sauce", "image": "", "description": "The signature Burgie sauce." }
+  ]
+}

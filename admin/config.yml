@@ -1,0 +1,84 @@
+# ============================================================
+#  Burgie — Menu Editor configuration (Sveltia / Decap CMS)
+#  Two things to fill in (see SETUP-CLOUDFLARE-CMS.md):
+#    1) backend.repo   -> your GitHub "owner/repo"
+#    2) backend.base_url -> your deployed sveltia-cms-auth Worker URL
+# ============================================================
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/burgie-site   # <-- CHANGE ME (e.g. burgie-leb/burgie-site)
+  branch: main
+  base_url: https://YOUR-AUTH-WORKER.workers.dev   # <-- CHANGE ME (the auth Worker URL)
+
+# Where uploaded photos are committed in the repo, and the URL the site uses.
+media_folder: items
+public_folder: /items
+
+# Friendlier defaults
+publish_mode: simple
+site_url: https://burgie.YOURDOMAIN.com   # optional: your live site URL
+
+# Shared fields for every menu item (YAML anchor, reused by each section below)
+item_fields: &item_fields
+  - { name: name, label: "Name", widget: string, hint: "Shown on the card and in the cart" }
+  - { name: price, label: "Price ($)", widget: number, value_type: float, min: 0, step: 0.5 }
+  - { name: description, label: "Description", widget: text, required: false }
+  - { name: tag, label: "Badge (optional)", widget: string, required: false, default: "", hint: "Small label e.g. Spicy, Signature, Imported. Leave blank for none." }
+  - { name: image, label: "Photo (optional)", widget: image, required: false, choose_url: false, hint: "Upload a square-ish photo. Leave blank to show the Burgie placeholder." }
+
+collections:
+  - name: menu
+    label: "Menu"
+    description: "Edit prices, descriptions, photos — and add or remove items. Changes go live automatically."
+    files:
+      - name: burgers
+        label: "Burgers"
+        file: data/burgers.json
+        fields:
+          - name: items
+            label: "Burgers"
+            label_singular: "Burger"
+            widget: list
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields: *item_fields
+      - name: appetizers
+        label: "Appetizers"
+        file: data/appetizers.json
+        fields:
+          - name: items
+            label: "Appetizers"
+            label_singular: "Appetizer"
+            widget: list
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields: *item_fields
+      - name: shakes
+        label: "Milkshakes"
+        file: data/shakes.json
+        fields:
+          - name: items
+            label: "Milkshakes"
+            label_singular: "Milkshake"
+            widget: list
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields: *item_fields
+      - name: drinks
+        label: "Drinks"
+        file: data/drinks.json
+        fields:
+          - name: items
+            label: "Drinks"
+            label_singular: "Drink"
+            widget: list
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields: *item_fields
+      - name: extras
+        label: "Extras & Add-ons"
+        file: data/extras.json
+        fields:
+          - name: items
+            label: "Extras & Add-ons"
+            label_singular: "Extra"
+            widget: list
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields: *item_fields

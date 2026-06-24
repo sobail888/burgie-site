@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burgie — We Do Burgers, You Do Eat | Zahle, Lebanon</title>
+  <meta name="description" content="Burgie — signature 120g Black Angus beef patties, smashed in-house. Burgers, loaded fries & thick shakes in Zahle, Lebanon. Order on WhatsApp." />
+  <meta property="og:title" content="Burgie — We Do Burgers, You Do Eat" />
+  <meta property="og:description" content="Signature 120g Black Angus patties, smashed in-house. Zahle, Lebanon." />
+  <meta property="og:type" content="restaurant" />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">
+      <img src="assets/logo.jpg" alt="Burgie logo" />
+      <span>BURGIE</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#burgers">Burgers</a>
+      <a href="#appetizers">Appetizers</a>
+      <a href="#shakes">Shakes</a>
+      <a href="#drinks">Drinks</a>
+      <a href="#extras">Extras</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__cart" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 4l.94 2H21a1 1 0 0 1 .96 1.27l-2.2 7.7A2 2 0 0 1 17.84 16H8.53a2 2 0 0 1-1.94-1.5L4.3 5.5 3.5 4H1V2h3a1 1 0 0 1 .96.73L5.4 4H6.2Z"/></svg>
+        <span class="nav__cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO (scroll-scrub) ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__sticky">
+      <canvas class="hero__canvas" id="heroCanvas"></canvas>
+      <div class="hero__scrim"></div>
+      <div class="hero__overlay">
+        <img class="hero__logo" src="assets/logo.jpg" alt="Burgie" />
+        <h1 class="hero__title">WE DO BURGERS<br /><span>YOU DO EAT</span></h1>
+        <p class="hero__tag">Signature <strong>120g Black Angus</strong> patties — smashed fresh, in-house. Zahle, Lebanon.</p>
+        <div class="hero__cta">
+          <a href="#burgers" class="btn btn--primary">See the Menu</a>
+          <a href="https://wa.me/96171317661" target="_blank" rel="noopener" class="btn btn--ghost">Order on WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero__hint" id="heroHint"><span>scroll</span><i></i></div>
+    </div>
+  </section>
+
+  <!-- ===== SIGNATURE STRIP ===== -->
+  <section class="signature">
+    <p class="signature__lead">Our signature <strong>120g Black Angus</strong> beef patties are freshly crafted in-house and perfectly smashed for ultimate flavor.</p>
+    <div class="signature__badges">
+      <div class="badge"><span>120g</span>Black Angus</div>
+      <div class="badge"><span>In-house</span>Crafted fresh</div>
+      <div class="badge"><span>Smashed</span>Maximum flavor</div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTIONS (rails filled by JS) ===== -->
+  <main>
+    <section class="menu" id="burgers" data-cat="burgers">
+      <div class="menu__head">
+        <span class="menu__kicker">We Do</span>
+        <h2 class="menu__title">Burgers</h2>
+        <p class="menu__sub">The Burgies — 120g Black Angus, smashed fresh. Swipe to explore.</p>
+      </div>
+      <div class="rail">
+        <button class="rail__arrow rail__arrow--left" aria-label="Scroll left">&#8249;</button>
+        <div class="rail__track" data-track="burgers"></div>
+        <button class="rail__arrow rail__arrow--right" aria-label="Scroll right">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="menu menu--alt" id="appetizers" data-cat="appetizers">
+      <div class="menu__head">
+        <span class="menu__kicker">We Do</span>
+        <h2 class="menu__title">Appetizers</h2>
+        <p class="menu__sub">Dirty, crispy, loaded. The good stuff.</p>
+      </div>
+      <div class="rail">
+        <button class="rail__arrow rail__arrow--left" aria-label="Scroll left">&#8249;</button>
+        <div class="rail__track" data-track="appetizers"></div>
+        <button class="rail__arrow rail__arrow--right" aria-label="Scroll right">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="menu" id="shakes" data-cat="shakes">
+      <div class="menu__head">
+        <span class="menu__kicker">We Do</span>
+        <h2 class="menu__title">Milkshakes</h2>
+        <p class="menu__sub">Thick, blended, ridiculous.</p>
+      </div>
+      <div class="rail">
+        <button class="rail__arrow rail__arrow--left" aria-label="Scroll left">&#8249;</button>
+        <div class="rail__track" data-track="shakes"></div>
+        <button class="rail__arrow rail__arrow--right" aria-label="Scroll right">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="menu menu--alt" id="drinks" data-cat="drinks">
+      <div class="menu__head">
+        <span class="menu__kicker">We Do</span>
+        <h2 class="menu__title">Drinks</h2>
+        <p class="menu__sub">Wash it all down.</p>
+      </div>
+      <div class="rail">
+        <button class="rail__arrow rail__arrow--left" aria-label="Scroll left">&#8249;</button>
+        <div class="rail__track" data-track="drinks"></div>
+        <button class="rail__arrow rail__arrow--right" aria-label="Scroll right">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="menu" id="extras" data-cat="extras">
+      <div class="menu__head">
+        <span class="menu__kicker">We Do</span>
+        <h2 class="menu__title">Extras &amp; Add-ons</h2>
+        <p class="menu__sub">Level up your order — upgrades &amp; signature sauces.</p>
+      </div>
+      <div class="rail">
+        <button class="rail__arrow rail__arrow--left" aria-label="Scroll left">&#8249;</button>
+        <div class="rail__track" data-track="extras"></div>
+        <button class="rail__arrow rail__arrow--right" aria-label="Scroll right">&#8250;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== VISIT ===== -->
+  <section class="visit" id="visit">
+    <div class="visit__info">
+      <span class="menu__kicker">Come Through</span>
+      <h2 class="menu__title">Visit Burgie</h2>
+      <ul class="visit__list">
+        <li><strong>Location</strong>Zahle, Lebanon</li>
+        <li><strong>Hours</strong>Monday – Saturday · 1:00 PM – 11:00 PM</li>
+        <li><strong>Closed</strong>Sunday</li>
+      </ul>
+      <div class="visit__cta">
+        <a href="https://wa.me/96171317661" target="_blank" rel="noopener" class="btn btn--primary">Contact on WhatsApp</a>
+        <a href="https://www.instagram.com/burgie.leb" target="_blank" rel="noopener" class="btn btn--dark">@burgie.leb</a>
+      </div>
+    </div>
+    <div class="visit__map">
+      <iframe
+        title="Burgie location in Zahle, Lebanon"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=35.887%2C33.836%2C35.917%2C33.856&amp;layer=mapnik&amp;marker=33.8463%2C35.9019"
+        loading="lazy"></iframe>
+      <a class="visit__directions btn btn--primary" target="_blank" rel="noopener"
+         href="https://www.google.com/maps/search/?api=1&query=Burgie%20Zahle%20Lebanon">Get Directions</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <img class="footer__logo" src="assets/logo.jpg" alt="Burgie" />
+    <p class="footer__line">WE DO MEAT.</p>
+    <div class="footer__links">
+      <a href="https://www.instagram.com/burgie.leb" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/96171317661" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#hero">Back to top</a>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Burgie · Zahle, Lebanon. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart" id="cart" aria-label="Your order">
+    <div class="cart__head">
+      <h3>Your Order</h3>
+      <button class="cart__close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart__body" id="cartBody">
+      <p class="cart__empty">Your cart is empty.<br />Add something tasty 🍔</p>
+    </div>
+    <div class="cart__foot" id="cartFoot" hidden>
+      <div class="cart__fields">
+        <input type="text" id="custName" placeholder="Your name" autocomplete="name" />
+        <input type="text" id="custAddr" placeholder="Delivery address (area, street, building)" autocomplete="street-address" />
+      </div>
+      <div class="cart__total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn btn--primary btn--block" id="cartOrder">Order on WhatsApp</button>
+      <p class="cart__note">You'll be taken to WhatsApp with your order ready to send.</p>
+    </div>
+  </aside>
+
+  <!-- ===== ITEM LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+    <div class="lightbox__inner">
+      <div class="lightbox__media" id="lbMedia"></div>
+      <div class="lightbox__info">
+        <h3 id="lbName"></h3>
+        <p id="lbDesc"></p>
+        <div class="lightbox__buy">
+          <span class="lightbox__price" id="lbPrice"></span>
+          <button class="btn btn--primary" id="lbAdd">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
